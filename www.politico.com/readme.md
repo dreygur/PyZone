@@ -55,7 +55,7 @@ fetch(basePath + search)
             case 'Organizations':
               type = '/organization/';
               break;
-            Case 'Industry':
+            case 'Industry':
               type = '/industry/';
               break;
             case 'Date':
