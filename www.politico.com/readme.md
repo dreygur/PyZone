@@ -20,7 +20,7 @@ const search = 'search.json';
 fetch(basePath + search)
   .then( (res) => {
       if(res.status != 200) {
-        console.log(`Looks like something isn't right. Status: {res.status}`);
+        console.log(`Looks like something isn't right. Status: ${res.status}`);
       }
       // Process response Data
       res.json().then( (data) => {
@@ -42,7 +42,7 @@ const search = 'search.json';
 fetch(basePath + search)
   .then( (res) => {
       if(res.status != 200) {
-        console.log(`Looks like something isn't right. Status: {res.status}`);
+        console.log(`Looks like something isn't right. Status: ${res.status}`);
       }
       // Process response Data
       res.json().then( (data) => {
@@ -65,7 +65,7 @@ fetch(basePath + search)
               type = '/type/';
               break;
             }
-          console.log(`Name: {data[i].name\nUrl: {basePath+type+data[i].slug}.json`);
+          console.log(`Name: ${data[i].name}\nUrl: ${basePath+type+data[i].slug}.json`);
         }
       })
     }
